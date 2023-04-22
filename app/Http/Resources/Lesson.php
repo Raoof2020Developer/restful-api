@@ -16,10 +16,11 @@ class Lesson extends JsonResource
     public function toArray(Request $request): array
     {
         return [
+            // 'Ref' => $this->id,
             'Author' => $this->user->name,
             'Title' => $this->title,
             'Content' => $this->body,
-            'Tags' => TagResource::collection($this->tags)
+            // 'Tags' => TagResource::collection($this->tags)
         ];
     }
 }

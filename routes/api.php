@@ -30,7 +30,7 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 
 Route::group(['prefix' => '/v1'], function() {
     
-    Route::apiResource('users', UserController::class)->middleware('auth:api');
+    Route::apiResource('users', UserController::class);
     Route::apiResource('lessons', LessonController::class);
     Route::apiResource('tags', TagController::class);
 

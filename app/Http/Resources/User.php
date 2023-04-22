@@ -19,6 +19,7 @@ class User extends JsonResource
             'id' => $this->id,
             'Full Name' => $this->name,
             'E-Mail' => $this->email,
+            'Role' => $this->role
             // 'Pass' => $this->password
             // 'Lessons' => LessonResource::collection($this->lessons),
         ];

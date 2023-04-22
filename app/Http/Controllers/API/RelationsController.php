@@ -21,6 +21,7 @@ class RelationsController extends Controller
         $fields = array();
         $filtered = array();
         foreach($user as $lesson) {
+            $fields['Ref'] = $lesson->id;
             $fields['Title'] = $lesson->title;
             $fields['Content'] = $lesson->body;
             $filtered[] = $fields;
